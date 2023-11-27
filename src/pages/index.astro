@@ -4,26 +4,162 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Welcome to Astro.">
   <main class="w-full px-4">
-    <div class="w-full h-20 py-2 flex items-center mt-4 mb-2">
-      <div class="h-full">
-        <img
-          class="w-full h-full rounded-full border-2 p-0.5 object-cover hover:border-yellow-500"
-          src="profile.jpg"
-          alt="Ehtisham"
-        />
-      </div>
-      <div class="grid grid-flow-row grid-rows-[2rem,_1fr] pl-3">
-        <h2 class="text-3xl font-sans tracking-wide font-medium">
-          Ehtisham Afzal
+    <div
+      class="self-stretch flex items-stretch justify-between gap-5 max-md:max-w-full max-md:flex-wrap"
+    >
+      <img
+        loading="lazy"
+        srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&"
+        class="aspect-square object-contain object-center w-[70px] overflow-hidden shrink-0 max-w-full rounded-[50%]"
+      />
+      <div
+        class="self-center flex grow basis-[0%] flex-col items-stretch my-auto"
+      >
+        <h1
+          class="justify-center text-black text-3xl font-bold leading-9 tracking-tight"
+        >
+          Ehtisham Afzal.
+        </h1>
+        <h2
+          class="justify-center text-neutral-500 text-xl font-semibold leading-7 mt-1.5"
+        >
+          Web Developer
         </h2>
-        <h3 class="text-xl text-gray-600">Web developer</h3>
       </div>
     </div>
-    <p class="w-full">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolorum
-      deleniti neque. Earum assumenda adipisci consectetur perspiciatis officiis
-      facere  sapiente. Magnam sint temporibus consequuntur at dicta ad
-      nulla accusantium.
+    <p
+      class="justify-center text-black text-lg font-medium leading-7 self-stretch mt-6 max-md:max-w-full"
+    >
+      I'm a creative front‑end developer with 2+ years of professional
+      experience, based in Pakistan. In my spare time I make illustrations on
+      Codepen.
     </p>
+    <!-- nav -->
+    <div>
+      <div
+        class="self-stretch flex w-full items-stretch justify-between gap-5 mt-8 pr-20 max-md:max-w-full max-md:flex-wrap max-md:pr-5"
+      >
+        <div class="flex items-stretch justify-between gap-1">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/5614b251-1315-4f45-80ac-782ba1257fde?apiKey=431852d9de2e43e2827041a652845494&"
+            class="aspect-square object-contain object-center w-4 fill-slate-900 overflow-hidden shrink-0 max-w-full"
+          />
+          <div
+            class="justify-center text-black text-xs font-medium leading-7 self-center grow whitespace-nowrap my-auto"
+          >
+            Vidios
+          </div>
+        </div>
+        <div class="flex items-stretch justify-between gap-1">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6aaa372b-e18b-4da2-b31b-45774ff26212?apiKey=431852d9de2e43e2827041a652845494&"
+            class="aspect-square object-contain object-center w-4 fill-slate-900 overflow-hidden shrink-0 max-w-full"
+          />
+          <div
+            class="justify-center text-black text-xs font-medium leading-7 self-center grow whitespace-nowrap my-auto"
+          >
+            Vidios
+          </div>
+        </div>
+        <div class="flex items-stretch justify-between gap-1">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/5496793a-982e-432d-a93a-6f5cf23a1159?apiKey=431852d9de2e43e2827041a652845494&"
+            class="aspect-square object-contain object-center w-4 fill-slate-900 overflow-hidden shrink-0 max-w-full"
+          />
+          <div
+            class="justify-center text-black text-xs font-medium leading-7 self-center grow whitespace-nowrap my-auto"
+          >
+            Vidios
+          </div>
+        </div>
+        <div class="flex items-stretch justify-between gap-1">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/7d8185d4-7363-45ba-81d4-44d7e014f7ce?apiKey=431852d9de2e43e2827041a652845494&"
+            class="aspect-square object-contain object-center w-4 fill-slate-900 overflow-hidden shrink-0 max-w-full"
+          />
+          <div
+            class="justify-center text-black text-xs font-medium leading-7 self-center grow whitespace-nowrap my-auto"
+          >
+            Vidios
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1
+      class="justify-center text-black text-3xl font-semibold leading-9 tracking-tight self-stretch mt-9 max-md:max-w-full"
+    >
+      Projects
+    </h1>
+    <div
+      class="self-stretch grid grid-flow-col grid-cols-2 gap-2 mt-10 max-md:max-w-full h-36"
+    >
+      <div>
+        <div class="w-full h-[90%] border"></div>
+        <h2 class="justify-center text-black text-base leading-7">Project 1</h2>
+      </div>
+      <div>
+        <div class="w-full h-[90%] border"></div>
+        <h2 class="justify-center text-black text-base leading-7">Project 2</h2>
+      </div>
+    </div>
+
+    <h2
+      class="justify-center text-black text-3xl font-semibold leading-9 tracking-tight self-stretch whitespace-nowrap mt-4 max-md:max-w-full"
+    >
+      Technologies
+    </h2>
+    <div
+      class="self-center flex w-[460px] max-w-full items-stretch gap-4 mt-8 max-md:flex-wrap max-md:justify-center"
+    >
+      <article
+        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
+      >
+      </article>
+      <article
+        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
+      >
+      </article>
+      <article
+        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
+      >
+      </article>
+      <article
+        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
+      >
+      </article>
+      <article
+        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
+      >
+      </article>
+    </div>
+    <div
+      class="self-center flex w-[460px] max-w-full items-stretch gap-4 mt-8 max-md:flex-wrap max-md:justify-center"
+    >
+      <article
+        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
+      >
+      </article>
+      <article
+        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
+      >
+      </article>
+      <article
+        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
+      >
+      </article>
+      <article
+        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
+      >
+      </article>
+      <article
+        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
+      >
+      </article>
+    </div>
   </main>
 </Layout>
