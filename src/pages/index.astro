@@ -1,23 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
+interface Props {
+  key: Number;
+}
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="w-full px-4">
-    <div
-      class="self-stretch flex items-stretch justify-between gap-5 max-md:max-w-full max-md:flex-wrap"
-    >
+  <main class="w-full px-4 relative">
+    <div class="w-full hfull absolute">
+
+    </div>
+    <div class="w-full gap-5 flex mt-14">
       <img
         loading="lazy"
         srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&"
-        class="aspect-square object-contain object-center w-[70px] overflow-hidden shrink-0 max-w-full rounded-[50%]"
+        class="w-20 h-20 object-contain object-center border rounded-full "
       />
-      <div
-        class="self-center flex grow basis-[0%] flex-col items-stretch my-auto"
-      >
-        <h1
-          class="justify-center text-black text-3xl font-bold leading-9 tracking-tight"
-        >
+      <div class="w-full grid grid-flow-row grid-rows-2 my-auto">
+        <h1 class="text-3xl font-bold leading-9 tracking-wide">
           Ehtisham Afzal.
         </h1>
         <h2
@@ -28,70 +28,24 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
     <p
-      class="justify-center text-black text-lg font-medium leading-7 self-stretch mt-6 max-md:max-w-full"
+      class="justify-center text-lg font-medium leading-7 self-stretch mt-6 max-md:max-w-full"
     >
       I'm a creative front‑end developer with 2+ years of professional
       experience, based in Pakistan. In my spare time I make illustrations on
       Codepen.
     </p>
     <!-- nav -->
-    <div>
-      <div
-        class="self-stretch flex w-full items-stretch justify-between gap-5 mt-8 pr-20 max-md:max-w-full max-md:flex-wrap max-md:pr-5"
-      >
-        <div class="flex items-stretch justify-between gap-1">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/5614b251-1315-4f45-80ac-782ba1257fde?apiKey=431852d9de2e43e2827041a652845494&"
-            class="aspect-square object-contain object-center w-4 fill-slate-900 overflow-hidden shrink-0 max-w-full"
-          />
-          <div
-            class="justify-center text-black text-xs font-medium leading-7 self-center grow whitespace-nowrap my-auto"
-          >
-            Vidios
-          </div>
-        </div>
-        <div class="flex items-stretch justify-between gap-1">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6aaa372b-e18b-4da2-b31b-45774ff26212?apiKey=431852d9de2e43e2827041a652845494&"
-            class="aspect-square object-contain object-center w-4 fill-slate-900 overflow-hidden shrink-0 max-w-full"
-          />
-          <div
-            class="justify-center text-black text-xs font-medium leading-7 self-center grow whitespace-nowrap my-auto"
-          >
-            Vidios
-          </div>
-        </div>
-        <div class="flex items-stretch justify-between gap-1">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/5496793a-982e-432d-a93a-6f5cf23a1159?apiKey=431852d9de2e43e2827041a652845494&"
-            class="aspect-square object-contain object-center w-4 fill-slate-900 overflow-hidden shrink-0 max-w-full"
-          />
-          <div
-            class="justify-center text-black text-xs font-medium leading-7 self-center grow whitespace-nowrap my-auto"
-          >
-            Vidios
-          </div>
-        </div>
-        <div class="flex items-stretch justify-between gap-1">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/7d8185d4-7363-45ba-81d4-44d7e014f7ce?apiKey=431852d9de2e43e2827041a652845494&"
-            class="aspect-square object-contain object-center w-4 fill-slate-900 overflow-hidden shrink-0 max-w-full"
-          />
-          <div
-            class="justify-center text-black text-xs font-medium leading-7 self-center grow whitespace-nowrap my-auto"
-          >
-            Vidios
-          </div>
-        </div>
-      </div>
+    <div
+      class=" flex w-full justify-between gap-5 mt-8"
+    >
+      <p>article</p>
+      <p>article</p>
+      <p>article</p>
+      <p>article</p>
     </div>
 
     <h1
-      class="justify-center text-black text-3xl font-semibold leading-9 tracking-tight self-stretch mt-9 max-md:max-w-full"
+      class="text-3xl font-semibold leading-9 my-10"
     >
       Projects
     </h1>
@@ -99,67 +53,34 @@ import Layout from "../layouts/Layout.astro";
       class="self-stretch grid grid-flow-col grid-cols-2 gap-2 mt-10 max-md:max-w-full h-36"
     >
       <div>
-        <div class="w-full h-[90%] border"></div>
-        <h2 class="justify-center text-black text-base leading-7">Project 1</h2>
+        <div class="w-full h-[90%] border rounded-lg"></div>
+        <h2 class="text-base leading-7">Project 1</h2>
       </div>
       <div>
-        <div class="w-full h-[90%] border"></div>
-        <h2 class="justify-center text-black text-base leading-7">Project 2</h2>
+        <div class="w-full h-[90%] border rounded-lg"></div>
+        <h2 class=" text-base leading-7">Project 2</h2>
       </div>
     </div>
 
-    <h2
-      class="justify-center text-black text-3xl font-semibold leading-9 tracking-tight self-stretch whitespace-nowrap mt-4 max-md:max-w-full"
-    >
+    <h2 class="my-12 text-3xl font-semibold leading-9 tracking-tight">
       Technologies
     </h2>
-    <div
-      class="self-center flex w-[460px] max-w-full items-stretch gap-4 mt-8 max-md:flex-wrap max-md:justify-center"
-    >
-      <article
-        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
-      >
-      </article>
-      <article
-        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
-      >
-      </article>
-      <article
-        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
-      >
-      </article>
-      <article
-        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
-      >
-      </article>
-      <article
-        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
-      >
-      </article>
-    </div>
-    <div
-      class="self-center flex w-[460px] max-w-full items-stretch gap-4 mt-8 max-md:flex-wrap max-md:justify-center"
-    >
-      <article
-        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
-      >
-      </article>
-      <article
-        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
-      >
-      </article>
-      <article
-        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
-      >
-      </article>
-      <article
-        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
-      >
-      </article>
-      <article
-        class="border bg-zinc-300 flex shrink-0 h-20 flex-col flex-1 rounded-lg border-solid border-black"
-      >
-      </article>
+    <div class="self-center flex w-full flex-wrap gap-2 px-1">
+      {
+        new Array(10).fill(0).map((_) => (
+          <svg
+            class="border w-20 h-20  rounded-lg hover:border-black"
+            viewBox="0 0 128 128"
+          >
+            <g fill="#61DAFB">
+              <>
+                <circle cx="64" cy="64" r="11.4" />
+                <path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z" />
+              </>
+            </g>
+          </svg>
+        ))
+      }
     </div>
   </main>
 </Layout>
