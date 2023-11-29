@@ -1,20 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-interface Props {
-  key: Number;
-}
+import { AppLogos, SocialLinks } from "../components/Data.js";
+import LinkedIn from "../components/LinkedIn.astro";
+import Github from "../components/Github.astro";
+import TwitterX from "../components/TwitterX.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Welcome to Ehtisham's Porfolio.">
   <main class="w-full px-4 relative">
-    <div class="w-full hfull absolute">
-
-    </div>
     <div class="w-full gap-5 flex mt-14">
       <img
         loading="lazy"
         srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&"
-        class="w-20 h-20 object-contain object-center border rounded-full "
+        class="w-20 h-20 object-contain object-center border-2 p-0.5 rounded-full"
       />
       <div class="w-full grid grid-flow-row grid-rows-2 my-auto">
         <h1 class="text-3xl font-bold leading-9 tracking-wide">
@@ -35,52 +33,39 @@ interface Props {
       Codepen.
     </p>
     <!-- nav -->
-    <div
-      class=" flex w-full justify-between gap-5 mt-8"
-    >
-      <p>article</p>
-      <p>article</p>
-      <p>article</p>
-      <p>article</p>
+    <div class="flex w-full h-10 p-1 overflow-hidden items-center justify-between gap-5 mt-8">
+      <div class="w-[80%] h-0.5 border border-white/50 bg-black mt-4" />
+      <a target="_blank" href="https://www.linkedin.com/in/ehtisham-afzal-819593195/"><LinkedIn /></a>
+      <a target="_blank" href="https://github.com/EHTISHAM-Afzal"><Github/></a>
+      <a target="_blank" href="https://twitter.com/EHTISHAMoo7"><TwitterX/></a>
     </div>
 
-    <h1
-      class="text-3xl font-semibold leading-9 my-10"
-    >
-      Projects
-    </h1>
+    <h1 class="text-3xl font-semibold leading-9 my-10">Projects</h1>
     <div
       class="self-stretch grid grid-flow-col grid-cols-2 gap-2 mt-10 max-md:max-w-full h-36"
     >
       <div>
         <div class="w-full h-[90%] border rounded-lg"></div>
-        <h2 class="text-base leading-7">Project 1</h2>
+        <h2 class="text-base leading-7">LittleLemon</h2>
       </div>
       <div>
         <div class="w-full h-[90%] border rounded-lg"></div>
-        <h2 class=" text-base leading-7">Project 2</h2>
+        <h2 class="text-base leading-7">Project 2</h2>
       </div>
     </div>
 
     <h2 class="my-12 text-3xl font-semibold leading-9 tracking-tight">
-      Technologies
+      TechStack
     </h2>
     <div class="self-center flex w-full flex-wrap gap-2 px-1">
       {
-        new Array(10).fill(0).map((_) => (
-          <svg
-            class="border w-20 h-20  rounded-lg hover:border-black"
-            viewBox="0 0 128 128"
-          >
-            <g fill="#61DAFB">
-              <>
-                <circle cx="64" cy="64" r="11.4" />
-                <path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z" />
-              </>
-            </g>
-          </svg>
+        AppLogos.map((logo) => (
+          <img
+            class="border w-20 h-20 p-4 object-cover rounded-lg bg-white/80 hover:bg-white/50 "
+            src={logo.Logo}
+          />
         ))
       }
     </div>
   </main>
-</Layout>
+</Layout>../components/Data.js
