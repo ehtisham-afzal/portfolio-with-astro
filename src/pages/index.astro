@@ -4,15 +4,18 @@ import { AppLogos, SocialLinks } from "../components/Data.js";
 import LinkedIn from "../components/LinkedIn.astro";
 import Github from "../components/Github.astro";
 import TwitterX from "../components/TwitterX.astro";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Welcome to Ehtisham's Porfolio.">
   <main class="w-full px-4 mt-28">
     <div class="w-full gap-5 flex">
-      <img
-        loading="lazy"
-        srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&"
-        class="w-20 h-20 object-contain object-center border-2 p-0.5 rounded-full"
+      <Image
+        width={80}
+        height={80}
+        alt="Ehtisham"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&"
+        class="object-contain object-center border-2 p-0.5 rounded-full"
       />
       <div class="w-full grid grid-flow-row grid-rows-2 my-auto">
         <h1 class="text-3xl font-bold leading-9 tracking-wide">
@@ -72,7 +75,9 @@ import TwitterX from "../components/TwitterX.astro";
     >
       {
         AppLogos.map((logo) => (
-          <img
+          <Image
+            width={80}
+            height={80}
             alt={logo.Name}
             class="border w-20 h-20 p-4 object-cover rounded-lg bg-white/80 hover:bg-white/50 "
             src={logo.Logo}
