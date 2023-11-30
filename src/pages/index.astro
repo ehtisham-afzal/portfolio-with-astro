@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { AppLogos, SocialLinks } from "../components/Data.js";
+import { AppLogos } from "../components/Data.js";
 import LinkedIn from "../components/LinkedIn.astro";
 import Github from "../components/Github.astro";
 import TwitterX from "../components/TwitterX.astro";
@@ -14,7 +14,7 @@ import { Image } from "astro:assets";
         width={80}
         height={80}
         alt="Ehtisham"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f9e95ed9-1699-42bb-a0eb-0746317ece18?apiKey=431852d9de2e43e2827041a652845494&"
+        src="/sham2.png"
         class="object-contain object-center border-2 p-0.5 rounded-full"
       />
       <div class="w-full grid grid-flow-row grid-rows-2 my-auto">
@@ -55,16 +55,28 @@ import { Image } from "astro:assets";
 
     <h1 class="text-3xl font-semibold leading-9 my-10">Projects</h1>
     <div
-      class="self-stretch grid grid-flow-col grid-cols-2 gap-2 mt-10 max-md:max-w-full h-36"
+      class="grid grid-flow-col  grid-cols-2 gap-2 w-full  h-44"
     >
-      <div>
-        <div class="w-full h-[90%] border rounded-lg"></div>
+      <a href="/projects/LittleLemon">
+        <Image
+          width={1}
+          height={1}
+          alt="LittleLemon"
+          class="w-full h-40 border rounded-lg object-cover"
+          src="/LittleLemonScreenshot.png"
+        />
         <h2 class="text-base leading-7">LittleLemon</h2>
-      </div>
-      <div>
-        <div class="w-full h-[90%] border rounded-lg"></div>
-        <h2 class="text-base leading-7">Project 2</h2>
-      </div>
+      </a>
+      <a href="/projects/LittleLemon">
+        <Image
+          width={1}
+          height={1}
+          alt="LittleLemon"
+          class="w-full h-40 border rounded-lg object-cover"
+          src="/LittleLemonScreenshot.png"
+        />
+        <h2 class="text-base leading-7">Promptopia</h2>
+      </a>
     </div>
 
     <h2 class="my-12 text-3xl font-semibold leading-9 tracking-tight">
