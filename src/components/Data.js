@@ -19,6 +19,29 @@ export const SocialLinks = [
     },
 ];
 
+export const LittleLemonStack = [
+    {
+        Name: "React",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    },
+    {
+        Name: "Express",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    },
+    {
+        Name: "MongoDB",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
+    },
+    {
+        Name: "Redux",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+    },
+    {
+        Name: "ShadCN-UI",
+        Logo: "https://avatars.githubusercontent.com/u/139895814?s=48&v=4",
+    },
+]
+
 export const AppLogos = [
     {
         Name: "HTML",

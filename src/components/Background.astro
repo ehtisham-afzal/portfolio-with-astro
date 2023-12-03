@@ -5,7 +5,7 @@
     ><defs
       ><radialGradient id="gggrain-gradient" r="1.3">
         <stop offset="0%" stop-color=""></stop>
-        <stop offset="50%" stop-color="hsl(212, 71%, 11%)"></stop>
+        <stop offset="50%" stop-color="hsl(212, 71%, 5%)"></stop>
         <stop offset="100%" stop-color=""></stop>
       </radialGradient><filter
         id="gggrain-filter"
@@ -20,8 +20,8 @@
         <feTurbulence
           type="fractalNoise"
           baseFrequency="0.83"
-          numOctaves="2"
-          seed="2"
+          numOctaves="1"
+          seed="1"
           stitchTiles="stitch"
           x="0%"
           y="0%"
@@ -57,9 +57,9 @@
           in="componentTransfer"
           result="colormatrix2"
           type="matrix"
-          values="1 0 0 0 0
+          values="0 0 0 0 0
 			0 1 0 0 0
-			0 0 1 0 0
+			0 0 0 0 0
 			0 0 0 24 -16"></feColorMatrix>
       </filter></defs
     ><g
@@ -69,7 +69,7 @@
         height="100%"
         fill="transparent"
         filter="url(#gggrain-filter)"
-        opacity="0.23"
+        opacity="2"
         style="mix-blend-mode: soft-light"></rect></g
     ></svg
   >
