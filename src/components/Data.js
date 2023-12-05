@@ -116,11 +116,15 @@ export const AppLogos = [
         Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
     },
     {
-        Name: "Babel ",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg",
+        Name: "Vite ",
+        Logo: "https://vitejs.dev/logo.svg",
     },
     {
-        Name: "Bash",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
+        Name: "Astro",
+        Logo: "/Astro.svg",
+    },
+    {
+        Name: "ShadCN-UI",
+        Logo: "https://avatars.githubusercontent.com/u/139895814?s=48&v=4",
     },
 ];

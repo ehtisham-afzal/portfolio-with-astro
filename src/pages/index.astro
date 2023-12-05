@@ -1,10 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { AppLogos } from "../components/Data.js";
-import LinkedIn from "../components/LinkedIn.astro";
-import Github from "../components/Github.astro";
-import TwitterX from "../components/TwitterX.astro";
+import LinkedIn from "../components/Icons/LinkedIn.astro";
+import Github from "../components/Icons/Github.astro";
+import TwitterX from "../components/Icons/TwitterX.astro";
 import { Image } from "astro:assets";
+import Tooltip from "../components/Tooltip.astro";
 ---
 
 <Layout title="Ehtisham's Portfolio.">
@@ -49,13 +50,13 @@ import { Image } from "astro:assets";
     </div>
 
     <h2 class="text-3xl font-semibold leading-9 my-10">Projects</h2>
-    <div class="grid sm:grid-flow-col sm:grid-cols-2 gap-2 w-full h-fit">
-      <a href="/projects/LittleLemon">
+    <div class="grid sm:grid-flow-col sm:grid-cols-2 gap-2 w-full sm:h-45">
+      <a  href="/projects/LittleLemon">
         <Image
           width={1}
           height={1}
           alt="LittleLemon"
-          class="w-full h-fit sm:h-40 border rounded-lg object-cover"
+          class="w-full h-[90%] border rounded-lg object-cover"
           src="/LittleLemonScreenshot.png"
         />
         <h2 class="text-lg mt-1">LittleLemon</h2>
@@ -65,7 +66,7 @@ import { Image } from "astro:assets";
           width={1}
           height={1}
           alt="Under construction"
-          class="w-full h-fit sm:h-40 border rounded-lg object-cover"
+          class="w-full h-[90%] border rounded-lg object-cover"
           src="/page-under-construction.png"
         />
         <h2 class="text-lg mt-1">Under-construction</h2>
@@ -76,17 +77,19 @@ import { Image } from "astro:assets";
       TechStack
     </h2>
     <div
-      class="self-center flex w-full flex-wrap gap-2 px-1 justify-center items-center"
+      class="self-center flex w-full flex-wrap gap-2 px-1 justify-center items-center h-fit"
     >
       {
         AppLogos.map((logo) => (
-          <Image
-            width={120}
-            height={120}
-            alt={logo.Name}
-            class="border w-20 h-20 p-4 object-cover rounded-lg bg-white/80 hover:bg-white/50 "
-            src={logo.Logo}
-          />
+          <Tooltip text={logo.Name}>
+            <Image
+              width={1}
+              height={1}
+              alt={logo.Name}
+              class="border w-20 h-20 p-4 object-cover rounded-lg bg-white/80 hover:bg-white/50 "
+              src={logo.Logo}
+            />
+          </Tooltip>
         ))
       }
     </div>
