@@ -8,9 +8,9 @@ const { text } = Astro.props;
     class="absolute flex flex-col items-center -top-9 transform w-full opacity-0 group-hover:opacity-100 transition duration-200"
   >
     <p
-      class="border w-full rounded-lg text-base text-center bg-white text-black border-black"
+      class="border w-full rounded-lg text-center bg-white text-black border-black whitespace-nowrap"
     >
-      {text.substring(0, 6)}
+      {text}
     </p>
     <svg
       class="absolute top-4"
