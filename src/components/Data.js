@@ -120,6 +120,10 @@ export const AppLogos = [
         Logo: "https://vitejs.dev/logo.svg",
     },
     {
+        Name: "React-router-dom ",
+        Logo: "/react-router-mark-color-inverted.svg",
+    },
+    {
         Name: "Astro",
         Logo: "/Astro.svg",
     },

@@ -16,7 +16,7 @@ import Tooltip from "../components/Tooltip.astro";
         height={80}
         alt="Ehtisham Afzal"
         src="/sham2.png"
-        class="object-contain object-center border-2 p-0.5 rounded-full"
+        class="object-contain object-center border-2 p-0.5 rounded-full maxw"
       />
       <div class="w-fit grid grid-flow-row grid-rows-2">
         <h1
@@ -29,7 +29,7 @@ import Tooltip from "../components/Tooltip.astro";
         </h2>
       </div>
     </div>
-    <p class="text-lg font-medium leading-7 mt-6">
+    <p class="text-lg font-medium mt-6">
       I'm a front-end developer, based in Pakistan. specializing in full-stack
       web applications using JavaScript, TypeScript, React, Next.js, and
       Node.js. I love building tools that are user-friendly, simple and
@@ -37,36 +37,45 @@ import Tooltip from "../components/Tooltip.astro";
     </p>
     <!-- nav -->
     <div class="flex w-full h-10 p-1 items-center justify-between gap-5 mt-8">
-      <div class="w-[80%] h-0.5 border border-white/50 bg-black mt-4"></div>
-      <a target="_blank" href="https://www.linkedin.com/in/ehtisham-afzal"
+      <div class="w-full h-0.5 border border-white/50 bg-black mt-4"></div>
+      <a
+        class="w-10 h-full flex items-center"
+        target="_blank"
+        href="https://www.linkedin.com/in/ehtisham-afzal"
         ><LinkedIn /><p class="sr-only">LinkedIn</p></a
       >
-      <a target="_blank" href="https://github.com/EHTISHAM-Afzal"
+      <a
+        class="w-10 h-full flex items-center"
+        target="_blank"
+        href="https://github.com/EHTISHAM-Afzal"
         ><Github /><p class="sr-only">Github</p></a
       >
-      <a target="_blank" href="https://twitter.com/EHTISHAMoo7"
+      <a
+        class="w-10 h-full flex items-center"
+        target="_blank"
+        href="https://twitter.com/EHTISHAMoo7"
         ><TwitterX /><p class="sr-only">TwitterX</p></a
       >
     </div>
 
     <h2 class="text-3xl font-semibold leading-9 my-10">Projects</h2>
     <div class="grid sm:grid-flow-col sm:grid-cols-2 gap-2 w-full sm:h-45">
-      <a  href="/projects/LittleLemon">
+      <a class="w-full h-60 sm:h-44" href="/projects/LittleLemon">
         <Image
           width={1}
           height={1}
           alt="LittleLemon"
-          class="w-full h-[90%] border rounded-lg object-cover"
-          src="/LittleLemonScreenshot.png"
+          class="w-full h-52 sm:h-40 border rounded-lg object-cover object-top"
+          src="/LettleLemonHero700px.jpg"
         />
         <h2 class="text-lg mt-1">LittleLemon</h2>
       </a>
-      <a href="#/">
+      <a class="w-full h-60 sm:h-44" href="#/">
         <Image
           width={1}
           height={1}
           alt="Under construction"
-          class="w-full h-[90%] border rounded-lg object-cover"
+          class="w-full h-52 sm:h-40 border rounded-lg object-cover object-top"
           src="/page-under-construction.png"
         />
         <h2 class="text-lg mt-1">Under-construction</h2>
@@ -85,7 +94,7 @@ import Tooltip from "../components/Tooltip.astro";
             <Image
               width={1}
               height={1}
-              alt={logo.Name}
+              alt={`${logo.Name} Logo`}
               class="border w-20 h-20 sm:w-24 sm:h-24 p-4 object-cover rounded-lg bg-white/80 hover:bg-white/50 "
               src={logo.Logo}
             />
