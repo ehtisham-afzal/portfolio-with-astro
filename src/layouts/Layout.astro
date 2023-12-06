@@ -1,5 +1,4 @@
 ---
-import Background from "../components/Background.astro";
 interface Props {
   title: string;
 }
@@ -55,9 +54,9 @@ const { title } = Astro.props;
   >
 
   <body
-    class="w-full grid sm:grid-cols-[1fr,_35rem,_1fr] justify-center items-center text-white/90"
+    class="w-full grid sm:grid-cols-[1fr,_35rem,_1fr] justify-center items-center dark:text-white/90 dark:bg-[#060d15]"
   >
-    <Background />
+    <!-- <Background /> -->
     <div class="w-full sm:col-start-2">
       <slot />
     </div>
