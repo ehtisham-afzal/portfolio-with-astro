@@ -56,6 +56,10 @@ export const AppLogos = [
         Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     },
     {
+        Name: "TypeScript",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+    },
+    {
         Name: "React",
         Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
@@ -89,6 +93,10 @@ export const AppLogos = [
     },
     {
         Name: "Jest",
+        Logo : "/vitest.svg"
+    },
+    {
+        Name: "Jest",
         Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
     },
     {
@@ -117,7 +125,7 @@ export const AppLogos = [
     },
     {
         Name: "Vite ",
-        Logo: "https://vitejs.dev/logo.svg",
+        Logo: "/vite.svg",
     },
     {
         Name: "React-router-dom ",
