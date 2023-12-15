@@ -92,7 +92,7 @@ export const AppLogos = [
         Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
     },
     {
-        Name: "Jest",
+        Name: "Vitest",
         Logo : "/vitest.svg"
     },
     {
