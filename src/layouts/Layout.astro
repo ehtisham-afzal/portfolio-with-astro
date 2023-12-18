@@ -32,8 +32,15 @@ const { title } = Astro.props;
     <title>{title}</title>
     <meta property="og:title" content={title} />
     <meta property="twitter:title" content={title} />
+    <meta
+      name="keywords"
+      content="ehtisham, ehtisham Afzal, ihtisham , ihtisham Afzal , ehtisham portfolio , ihtisham portfolio"
+    />
     <!-- google tage -->
-    <meta name="google-site-verification" content="GmKluG9hc_vXFyw9Wea_KXy_8KBNvfs67yY29tzG8tI" />
+    <meta
+      name="google-site-verification"
+      content="GmKluG9hc_vXFyw9Wea_KXy_8KBNvfs67yY29tzG8tI"
+    />
     <style>
       /* This is the part that's visible */
       body::-webkit-scrollbar {
@@ -54,7 +61,7 @@ const { title } = Astro.props;
   <body
     class="w-full antialiased p-0 px-4 m-0 sm:grid sm:grid-cols-[1fr,_35rem,_1fr] justify-center items-center dark:text-[hsl(0,0%,98%)] bg-[hsl(240,10%,3.9%)]"
   >
-    <div class="w-full sm:col-start-2 ">
+    <div class="w-full sm:col-start-2">
       <slot />
     </div>
   </body>
