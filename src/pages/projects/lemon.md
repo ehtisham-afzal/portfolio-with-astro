@@ -1,72 +1,47 @@
+<main className="w-full h-full min-h-screen flex justify-center">
+<div className="prose prose-tr:border-none">
 
-# grids-and-flexbox-cheat-sheet_instructions
+# LittleLemon
 
-Note: ‘|’ stands for alternatives or OR.
+## Project Overview
 
-# Grid
+LittleLemon is a mobile-first full-stack web application that I developed using the MERN stack (MongoDB, Express, React, and Node.js). I learned how to build the front-end of this application from the **Meta Front-End Developer Professional Certificate** course on Coursera, taught by meta engineers. This e-commerce application has many features, such as table booking form that could store the booking data in a**MongoDB** database and use it to avoid table overbooking and a universal cart, a smooth shopping experience, a product showcase, and support pages. I created this application from scratch to demonstrate my skills and knowledge in front-end development.
 
-The syntax for creating a grid:
+## Project Details
 
-```
-selector{
-    display: grid; /* or inline-grid */
-}
-```
+| Type       | Stack             | Links                                                        |
+| ---------- | ----------------- | ------------------------------------------------------------ |
+| E Commerce | JavaScript,       | [Live Demo](https://littlelemon-sham.vercel.app)             |
+|            | React,            | [Github Repo](https://github.com/EHTISHAM-Afzal/LittleLemon) |
+|            | TailwindCSS       |                                                              |
+|            | Express,          |                                                              |
+|            | React-router-dom, |                                                              |
+|            | Redux             |                                                              |
+|            | ReduxToolkit      |                                                              |
+|            | ReduxQuerry,      |                                                              |
+|            | Vite,             |                                                              |
+|            | Auth0             |                                                              |
+|            | Cloudinary,       |                                                              |
+|            | ShadCn            |                                                              |
+|            | Radix ui          |                                                              |
+|            | React-hook-form   |                                                              |
+|            | And more          |                                                              |
 
-# To make an HTML and CSS web page, follow the steps below.
+![LilleLemon Hero section](/LettleLemonHero700px.jpg)
 
-This document provides a list of CSS generators that can make designing and styling web applications easier. It also includes steps for creating an HTML and CSS web page, along with links to various generators and tools with sample outputs.
+## Project Purpose And Goal
 
-- [LayoutIt!](http://www.layoutit.com/) - A CSS layout generator that allows you to create a custom layout for your web page. Here is a [sample layout](http://www.layoutit.com/build).
-- [Background Pattern Generator](http://bg.siteorigin.com/) - A tool that generates background patterns for your web page. Here is a [sample pattern](http://bg.siteorigin.com/#8B8B8B/0.05/25/0.1/0.1/1/0).
-- [Buttons Generator](https://markodenic.com/tools/buttons-generator/) - A button generator that allows you to create custom buttons for your web page. Here is a [sample button](https://markodenic.com/tools/buttons-generator/?buttonType=1&buttonColor=4&buttonTextColor=6&buttonText=Click%20Here).
-- [Webcode.tools](https://webcode.tools/) - A collection of some of the best HTML and CSS tools for web development. Each tool has its own sample output, which you can see by clicking on the tool's name.
-- [CSS media Querry generators](https://simplecss.eu/)
-- [Animista for animating anything with CSS](https://animista.net/)
-- [Box Shadow CSS Generator](https://cssgenerator.org/box-shadow-css-generator.html)
-- [Neomorphism soft UI](https://neumorphism.io/)
-- shadows Generator
+The main purpose of this project is to apply the skill I just learned. The project has three phases. The first phase is to build the user interface, which allows the user to see the design and layout of the application. The second phase is to make the application functional, which enables the user to reserve a table online. The third phase is the most extensive and complex, as it involves refactoring the entire application as a full-stack e-commerce application with all the features that such an application requires.
 
-[http://shadows.brumm.af/](http://shadows.brumm.af/)
+## Web Stack And Explaination
 
-- [Fancy border radius](http://9elements.github.io/fancy-border-radius)
-- [CSS grids generator](https://cssgrid-generator.netlify.app/)
-- [Accordition generator](http://accordionslider.com/)
+![logo1](/logo1.png) ![logo2](/logo2.png) ![logo3](/logo3.png)
 
-<aside>
-💡 [Waves generator](https://getwaves.io/)
+**React** is a popular and fast front-end library that helps me create dynamic and interactive user interfaces with ease. I use choose them write JSX syntax to write HTML-like code in JavaScript and leverage the power of hooks, components, props and state management.
 
-</aside>
+**Express**is a minimalist and flexible back-end framework that runs on Node.js. I used it to build RESTful APIs, handle routing, middleware, error handling.
 
-<aside>
-💡 [Glass morphism generator](https://markodenic.com/tools/glassmorphism-css-generator/)
+**MongoDB** is a scalable and flexible NoSQL database that stores data in JSON-like documents. I choose it to store querries and data efficiently and reliably. MongoDB also supports various features such as indexing, aggregation, transactions, sharding and replication.
 
-</aside>
-
-[Glassmorphism CSS Generator](https://markodenic.com/tools/glassmorphism-css-generator/)
-
- 
-
-# HTML and CSS Web Applications Generators
-
-## CSS Generators That Will Make Life Easier
-
-Here's a list of CSS generators that can make designing and styling web applications much easier:
-
-- [CSS Gradient Generator](https://cssgradient.io/)
-- [CSS Box Shadow Generator](https://www.cssmatic.com/box-shadow)
-- [CSS Box Shadow Gen](https://cssgenerator.org/box-shadow-css-generator.html)erator 21
-- [CSS Layout Generator](http://www.layoutit.com/)
-- [CSS Button Generator](https://www.cssportal.com/css-button-generator/)
-- [CSS Checkbox Generator](https://www.cssportal.com/blog/css-checkbox-generator/)
-- [CSS Animation Generator](https://animista.net/)
-- [CSS Grid Generator](https://cssgrid-generator.netlify.app/)
-- [CSS Flexbox Generator](https://flexbox-generator.netlify.app/)
-- [CSS Text Shadow Generator](https://cssportal.com/css-text-shadow-generator/)
-- [CSS Border Radius Generator](https://border-radius.com/)
-- [CSS Transform Generator](https://css-transform.moro.es/)
-- [CSS Cursor Generator](https://www.cssportal.com/css-cursor-generator/)
-- [CSS Clip Path Generator](https://bennettfeely.com/clippy/)
-- [CSS Gradient Animator](https://www.gradient-animator.com/)
-
-Using these generators can save time and effort when it comes to designing and styling web applications.
+</div>
+</main>
