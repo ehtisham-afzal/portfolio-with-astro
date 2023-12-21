@@ -93,7 +93,7 @@ export const AppLogos = [
     },
     {
         Name: "Vitest",
-        Logo : "/vitest.svg"
+        Logo: "/vitest.svg"
     },
     {
         Name: "Jest",
@@ -106,6 +106,10 @@ export const AppLogos = [
     {
         Name: "NodeJS ",
         Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    },
+    {
+        Name: "PostgreSQL",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
     },
     {
         Name: "MongoDB",
