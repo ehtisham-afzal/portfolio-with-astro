@@ -60,8 +60,36 @@ export const AppLogos = [
         Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
     },
     {
+        Name: "SQL",
+        Logo: "/sql.svg"
+    },
+    {
         Name: "React",
         Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    },
+    {
+        Name: "NodeJS ",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    },
+    {
+        Name: "NextJs",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+    },
+    {
+        Name: "Astro",
+        Logo: "/Astro.svg",
+    },
+    {
+        Name: "PostgreSQL",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
+    },
+    {
+        Name: "MongoDB",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
+    },
+    {
+        Name: "Express",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
     },
     {
         Name: "Git ",
@@ -80,10 +108,6 @@ export const AppLogos = [
         Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg",
     },
     {
-        Name: "NextJs",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
-    },
-    {
         Name: "TailwindCSS",
         Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
     },
@@ -92,40 +116,8 @@ export const AppLogos = [
         Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
     },
     {
-        Name: "Vitest",
-        Logo: "/vitest.svg"
-    },
-    {
-        Name: "Jest",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
-    },
-    {
-        Name: "Express",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-    },
-    {
-        Name: "NodeJS ",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    },
-    {
-        Name: "PostgreSQL",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
-    },
-    {
-        Name: "MongoDB",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
-    },
-    {
         Name: "MarkDown",
         Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
-    },
-    {
-        Name: "VSCode",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-    },
-    {
-        Name: "Figma ",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
     },
     {
         Name: "Vite ",
@@ -136,8 +128,20 @@ export const AppLogos = [
         Logo: "/react-router-mark-color-inverted.svg",
     },
     {
-        Name: "Astro",
-        Logo: "/Astro.svg",
+        Name: "Vitest",
+        Logo: "/vitest.svg"
+    },
+    {
+        Name: "Jest",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
+    },
+    {
+        Name: "VSCode",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+    },
+    {
+        Name: "Figma ",
+        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
     },
     {
         Name: "ShadCN-UI",
