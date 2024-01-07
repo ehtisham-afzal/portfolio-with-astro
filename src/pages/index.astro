@@ -4,6 +4,7 @@ import { AppLogos } from "../components/Data.js";
 import { Image } from "astro:assets";
 import Tooltip from "../components/Tooltip.astro";
 import MainPageNavBar from "../components/MainPageNavBar.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="Ehtisham's Portfolio.">
@@ -69,7 +70,7 @@ import MainPageNavBar from "../components/MainPageNavBar.astro";
               width={1}
               height={1}
               alt={`${logo.Name} Logo`}
-              class="border w-full h-full p-4 object-cover rounded-lg bg-white/80 hover:bg-white/50 "
+              class="border w-full h-full p-4 object-cover rounded-lg backdrop-filter bg-black/50 hover:bg-gray-500 "
               src={logo.Logo}
             />
           </Tooltip>

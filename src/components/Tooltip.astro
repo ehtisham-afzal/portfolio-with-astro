@@ -5,20 +5,16 @@ const { text } = Astro.props;
 <div class="group relative">
   <!-- tooltip -->
   <div
-    class="absolute flex flex-col items-center -top-9 transform w-full opacity-0 group-hover:opacity-100 transition duration-200"
+    class={`absolute flex flex-col items-center -top-9 transform w-full opacity-0 group-hover:opacity-100 transition duration-200`}
   >
     <p
-      class="border w-full rounded-md px-1 text-center bg-white text-black whitespace-nowrap overflow-hidden"
+      class="border w-full rounded-md px-1 text-center  text-white whitespace-nowrap overflow-hidden"
     >
       {text}
     </p>
-    <svg
-      class="absolute top-4"
-      fill="#ffff"
-      id="Outline"
-      viewBox="0 0 24 24"
-      height="25"><path d="M5,9H19l-6.293,6.293a1,1,0,0,1-1.414,0Z"></path></svg
-    >
+    <span
+      class="absolute top-[18px]"
+    >▼</span>
   </div>
   <slot />
 </div>

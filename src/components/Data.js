@@ -57,11 +57,11 @@ export const AppLogos = [
     },
     {
         Name: "TypeScript",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        Logo: "/Logos/TypeScript.svg"
     },
     {
         Name: "SQL",
-        Logo: "/sql.svg"
+        Logo: "/Logos/sql.svg"
     },
     {
         Name: "React",
@@ -73,11 +73,11 @@ export const AppLogos = [
     },
     {
         Name: "NextJs",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+        Logo: "/Logos/NextJs.svg"
     },
     {
         Name: "Astro",
-        Logo: "/Astro.svg",
+        Logo: "/Logos/Astro.svg",
     },
     {
         Name: "PostgreSQL",
@@ -89,7 +89,7 @@ export const AppLogos = [
     },
     {
         Name: "Express",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+        Logo: "/Logos/Express.svg",
     },
     {
         Name: "Git ",
@@ -97,7 +97,7 @@ export const AppLogos = [
     },
     {
         Name: "Github",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        Logo: "/Logos/Github.svg",
     },
     {
         Name: "Npm ",
@@ -117,19 +117,19 @@ export const AppLogos = [
     },
     {
         Name: "MarkDown",
-        Logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
+        Logo: "/Logos/MDX.svg",
     },
     {
         Name: "Vite ",
-        Logo: "/vite.svg",
+        Logo: "/Logos/vite.svg",
     },
     {
         Name: "React-router-dom ",
-        Logo: "/react-router-mark-color-inverted.svg",
+        Logo: "/Logos/react-router-mark-color-inverted.svg",
     },
     {
         Name: "Vitest",
-        Logo: "/vitest.svg"
+        Logo: "/Logos/vitest.svg"
     },
     {
         Name: "Jest",
@@ -145,6 +145,6 @@ export const AppLogos = [
     },
     {
         Name: "ShadCN-UI",
-        Logo: "https://avatars.githubusercontent.com/u/139895814?s=48&v=4",
+        Logo: "/Logos/ShadCn.svg",
     },
 ];
