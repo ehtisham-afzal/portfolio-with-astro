@@ -4,39 +4,7 @@ import { Image } from "astro:assets";
 
 <main class="w-screen min-h-screen bg-slate-200 flex items-center justify-center">
 <!-- <Image class={`w-96  object-cover`} alt={'anything'} width={1} height={1} src='/image.png' /> -->
-<div class="beam" />
+
 </main>
 
 <style>
-    .beam {
- width: 10px;
- height: 100px;
- background-color: rgb(98, 98, 255);
- /* background: linear-gradient(to bottom, red, yellow); */
- border-radius: 5px;
- position: relative;
- overflow: hidden;
-}
-
-.beam::before {
- content: "";
- display: block;
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- background: rgba(255, 255, 255, 0.1);
- transform: translateY(-100%);
- animation: pulse 1s infinite ease-in-out;
-}
-
-@keyframes pulse {
- 0%, 100% {
-   transform: translateY(-100%);
- }
- 50% {
-   transform: translateY(0);
- }
-}
-</style>
